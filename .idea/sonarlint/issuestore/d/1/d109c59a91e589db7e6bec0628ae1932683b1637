@@ -1,0 +1,34 @@
+
+x
+java:S1066”"/Merge this if statement with the enclosing one.(áçÑ´ùÿÿÿÿ8°üÇÑ2J$e2fa34c9-2947-4b86-b5e9-5d9b8e58988e
+
+java:S2589s"7Remove this expression which always evaluates to "true"(±Ïôøÿÿÿÿ8æüÇÑ2J$22ac1c7f-3127-4e15-8ff1-17b5e5ebba6c
+œ	java:S115)"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(÷î¯ğ8½ú™ø2J$0ca2f9a3-cfa4-4ebd-9f79-109e48d30851
+v
+java:S1135•"2Complete the task associated to this TODO comment.(¦Çšà8âú™ø2J$587d8d56-042b-46cd-ab50-5c2747da763f
+–
+java:S6204©"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8úüÇÑ2J$8e9ea222-82a1-4cdb-b38b-a28b998f496e
+p
+java:S3011¬",This accessibility update should be removed.(˜ÂÓ˜8êú™ø2J$5ba13ec9-2211-49e0-92ad-f5299f2580bc
+u
+java:S3011­",This accessibility bypass should be removed.(€»ç„üÿÿÿÿ8ëú™ø2J$f858368d-8635-478f-a03e-1727519efc93
+–
+java:S6204³"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8üüÇÑ2J$083ee59f-2045-4f5b-81ec-608ae6e080a0
+p
+java:S3011¶",This accessibility update should be removed.(˜ÂÓ˜8ñú™ø2J$333ec471-0011-45a3-b30c-8e7aab68ad58
+p
+java:S3011·",This accessibility bypass should be removed.(ÿü±ˆ8òú™ø2J$04b0fd41-2ff5-418a-9433-5e58839b0e8a
+v
+java:S1135·"2Complete the task associated to this TODO comment.(ÿü±ˆ8òú™ø2J$5e2539ce-d865-48b9-afd1-83a9769e9adc
+–
+java:S6204½"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ıüÇÑ2J$95ab4c4a-9d44-4203-a8cb-10338904443e
+p
+java:S3011À",This accessibility update should be removed.(˜ÂÓ˜8õú™ø2J$e9dba35b-76a4-4c9b-a3f1-afd9bb9fe1bb
+o
+java:S3011Á",This accessibility bypass should be removed.(¶èó08õú™ø2J$d9b6718b-ea1d-4883-b4a2-326dbd400bab
+u
+java:S1135Á"2Complete the task associated to this TODO comment.(¶èó08öú™ø2J$323768cc-2f75-4975-9128-6371467bced4
+”
+java:S3457Ì"KFormat specifiers or lambda should be used instead of string concatenation.(¸îÿÁşÿÿÿÿ8÷ú™ø2J$5a263312-23db-4aad-abd6-eb450d967495
+o
+java:S1168Í"+Return an empty collection instead of null.(¥¹ï8€ıÇÑ2J$f5dfdcaa-4b1a-460c-a3da-41bdd0127ebf
