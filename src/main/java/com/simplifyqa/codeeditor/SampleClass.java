@@ -21,8 +21,33 @@ public class SampleClass
     @AutoInjectWebDriver
     private IQAWebDriver driver;
     private static final Logger log = Logger.getLogger(SampleClass.class.getName());
+
     public SampleClass() {
     }
+
+    @SyncAction(uniqueId = "MyProject-Sample-102",groupName = "Click",objectTemplate = @ObjectTemplate(name = TechnologyType.WEB,description = "This action belongs to WEB"))
+    public boolean SampleClick(String xpath1, String url){
+           boolean res= driver.launchApplication(url);
+           if(res){
+               try{
+                Thread.sleep(2000);
+               }catch(Exception e){
+                  log.info("got exeception"+e.getMessage());
+               }
+            boolean click= driver.findElement(FindBy.xpath(xpath1)).click();
+            log.info("custom click is executed ");
+            return click;
+           }
+          return false;
+
+       
+        
+    }
+
+
+
+
+
 
     @SyncAction(uniqueId = "MyProject-Sample-001",groupName = "Click",objectTemplate = @ObjectTemplate(name = TechnologyType.WEB,description = "This action belongs to WEB"))
     public boolean customSampleClick(String xpath){
@@ -49,4 +74,6 @@ public class SampleClass
         log.info("addition of values performed");
         return true;
     }
+
+
 }
