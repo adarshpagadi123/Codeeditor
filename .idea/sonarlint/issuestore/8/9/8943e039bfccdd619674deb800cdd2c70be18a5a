@@ -1,0 +1,18 @@
+
+Ä
+java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(—°º8ùû™ø2J$bc5c0482-ff36-461f-bc1c-5317441f0819
+–
+java:S1128"NRemove this unused import 'com.simplifyqa.pluginbase.common.enums.ActionType'.(±­™³øÿÿÿÿ8„ü™ø2J$47a838db-69aa-417b-8129-ed76258df4f7
+”
+java:S1128"QRemove this unused import 'com.simplifyqa.pluginbase.common.enums.ParameterType'.(È–¡8†ü™ø2J$6debde12-5262-4bf0-8155-181c200db8b6
+•
+java:S1128"RRemove this unused import 'com.simplifyqa.pluginbase.common.enums.TechnologyType'.(æéÁÊ8†ü™ø2J$c702080c-a7ea-4fef-9488-5b770c35b5bd
+˜
+java:S1128	"PRemove this unused import 'com.simplifyqa.pluginbase.plugin.annotations.Action'.(ÄÖ¤¨ÿÿÿÿÿ8†ü™ø2J$df4618f5-ffbc-4896-ab35-523dac95405f
+ 
+java:S1128
+"XRemove this unused import 'com.simplifyqa.pluginbase.plugin.annotations.ObjectTemplate'.(îÙ–¯şÿÿÿÿ8†ü™ø2J$23e2efea-3a53-4e1f-9a65-871c7ccfe41a
+–
+java:S1128"SRemove this unused import 'com.simplifyqa.pluginbase.plugin.annotations.Parameter'.(áçö¬8†ü™ø2J$30ec9d2f-2333-46fd-bab3-9c0049eafeaf
+–
+java:S1128"NRemove this unused import 'com.simplifyqa.pluginbase.plugin.annotations.Sync'.(ƒÑİÿÿÿÿÿ8†ü™ø2J$3721c2e1-a9ce-4125-9dee-bab62515e269

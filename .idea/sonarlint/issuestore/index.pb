@@ -1,0 +1,21 @@
+
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+h
+8src/main/java/com/simplifyqa/codeeditor/SampleClass.java,8\9\8943e039bfccdd619674deb800cdd2c70be18a5a
+t
+Dsrc/main/java/com/simplifyqa/codeeditor/plugin/CodeEditorPlugin.java,d\1\d109c59a91e589db7e6bec0628ae1932683b1637
+9
+	build.bat,2\8\282119df8cfcad4c8c8421ba30fdcdf8793f5f82
+p
+@src/main/java/com/simplifyqa/codeeditor/helper/ISyncActions.java,b\5\b5b7e654396e4e89d0f1e4ba45021e7f4ccf6956
+x
+Hsrc/main/java/com/simplifyqa/codeeditor/helper/CustomPackageScanner.java,f\d\fd0b45d53d327ec5e384659dfffd6eafe1ddba42
+x
+Hsrc/main/java/com/simplifyqa/codeeditor/helper/ICustomMethodInvoker.java,1\5\15cfedc7a68b04eafcc794fa304b585c149902f9
+w
+Gsrc/main/java/com/simplifyqa/codeeditor/helper/CustomMethodInvoker.java,d\6\d6f65884a7cbe1afd80fb16129ab36976fcc1a5d
+n
+>src/main/java/com/simplifyqa/codeeditor/helper/CustomSync.java,1\2\12375b0c01c5ac178b2c2b3da0872f40933464c3
+t
+Dsrc/main/java/com/simplifyqa/codeeditor/helper/ISyncTransformer.java,1\6\16c0537efa2d0d4a380ff8de6db8978dc69ce939
