@@ -67,7 +67,9 @@ public class SampleClass
     //     return true;
     // }
 
-    @SyncAction(uniqueId = "MyProject-Sample-001",groupName = "Click",objectTemplate = @ObjectTemplate(name = TechnologyType.WEB,description = "This action belongs to WEB"))
+    
+
+    @SyncAction(uniqueId = "MyProject-Sample-01",groupName = "Click",objectTemplate = @ObjectTemplate(name = TechnologyType.WEB,description = "This action belongs to WEB"))
     public boolean customSampleClick(String xpath){
         driver.findElement(FindBy.xpath(xpath)).click();
         log.info("custom click is executed ");
@@ -139,18 +141,20 @@ public class SampleClass
               return true;
         }
 
+
         @SyncAction(uniqueId = "Custom-007", groupName="click", objectTemplate = @ObjectTemplate(name =TechnologyType.WEB,description = "This action belongs to WEB") )
         public boolean customSampleenterTextUsingJS (String Text){
             driver.findElement(FindBy.xpath("//input[@id='subjectsInput']")).enterText(Text);
                 return true;
           }
 
+ 
           @SyncAction(uniqueId = "Custom-008", groupName="click", objectTemplate = @ObjectTemplate(name =TechnologyType.WEB,description = "This action belongs to WEB") )
           public boolean customSamplelongPress (){
               driver.findElement(FindBy.xpath("//div[text()='Drag me']")).longPress();
                   return true;
             }
-  
+
             @SyncAction(uniqueId = "Custom-009", groupName="click", objectTemplate = @ObjectTemplate(name =TechnologyType.WEB,description = "This action belongs to WEB") )
             public boolean customSamplemoveToElement (){
                 driver.findElement(FindBy.xpath("(//div[@class='action-buttons'])[1]/span[1]")).moveToElement();
