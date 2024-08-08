@@ -39,41 +39,33 @@ public class SampleClass
             return click;
            }
           return false;
-
-       
-        
     }
 
+    // @SyncAction(uniqueId = "MyProject-Sample-001",groupName = "Click",objectTemplate = @ObjectTemplate(name = TechnologyType.WEB,description = "This action belongs to WEB"))
+    // public boolean customSampleClick(String xpath){
+    //     driver.findElement(FindBy.xpath(xpath)).click();
+    //     log.info("custom click is executed ");
+    //     return true;
+    // }
 
-
-
-
-
-    @SyncAction(uniqueId = "MyProject-Sample-001",groupName = "Click",objectTemplate = @ObjectTemplate(name = TechnologyType.WEB,description = "This action belongs to WEB"))
-    public boolean customSampleClick(String xpath){
-        driver.findElement(FindBy.xpath(xpath)).click();
-        log.info("custom click is executed ");
-        return true;
-    }
-
-    @SyncAction(uniqueId = "MyProject-Sample-002",groupName = "Type Text",description = "Save to db using db url",objectTemplate = @ObjectTemplate(name = TechnologyType.ANDROID,description = "This action belongs to ANDROID"))
-    public boolean customSampleTypeText(String xpath,String text){
-        driver.findElement(FindBy.xpath(xpath)).enterText(text);
-        log.info("enter text is executed");
-        return true;
-    }
-    @SyncAction(uniqueId = "MyProject-Sample-003",groupName = "Type Text",objectTemplate = @ObjectTemplate(name = TechnologyType.IOS,description = "This action belongs to IOS"))
-    public boolean customSampleEnterTextWithJS(String xpathOfElement,String valueToEnter){
-        driver.findElement(FindBy.xpath(xpathOfElement)).enterText(valueToEnter);
-        log.info("enter text is executed");
-        return true;
-    }
-    @SyncAction(uniqueId = "MyProject-Sample-004",groupName = "Generic",objectTemplate = @ObjectTemplate(name = TechnologyType.GENERIC,description = "This action belongs to GENERIC"))
-    public boolean customAddition(int... ints){
-        driver.getGeneral().additionOfValues(ints);
-        log.info("addition of values performed");
-        return true;
-    }
+    // @SyncAction(uniqueId = "MyProject-Sample-002",groupName = "Type Text",description = "Save to db using db url",objectTemplate = @ObjectTemplate(name = TechnologyType.ANDROID,description = "This action belongs to ANDROID"))
+    // public boolean customSampleTypeText(String xpath,String text){
+    //     driver.findElement(FindBy.xpath(xpath)).enterText(text);
+    //     log.info("enter text is executed");
+    //     return true;
+    // }
+    // @SyncAction(uniqueId = "MyProject-Sample-003",groupName = "Type Text",objectTemplate = @ObjectTemplate(name = TechnologyType.IOS,description = "This action belongs to IOS"))
+    // public boolean customSampleEnterTextWithJS(String xpathOfElement,String valueToEnter){
+    //     driver.findElement(FindBy.xpath(xpathOfElement)).enterText(valueToEnter);
+    //     log.info("enter text is executed");
+    //     return true;
+    // }
+    // @SyncAction(uniqueId = "MyProject-Sample-004",groupName = "Generic",objectTemplate = @ObjectTemplate(name = TechnologyType.GENERIC,description = "This action belongs to GENERIC"))
+    // public boolean customAddition(int... ints){
+    //     driver.getGeneral().additionOfValues(ints);
+    //     log.info("addition of values performed");
+    //     return true;
+    // }
 
 
 }

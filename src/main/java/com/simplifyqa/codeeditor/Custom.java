@@ -21,9 +21,8 @@ public class Custom {
 
     @SyncAction(uniqueId = "MyProject-Sample-103",groupName = "Click",objectTemplate = @ObjectTemplate(name = TechnologyType.WEB,description = "This action belongs to WEB"))
     public boolean waitUntilElementNotPresent(String xpath){
-       // driver.findElement(FindBy.xpath(xpath));
-        boolean de = driver.exist(FindBy.xpath(xpath));
-        if(!de){
+        boolean de = driver.findElement(FindBy.xpath(xpath)).waitUntilElementNotPresent();
+        if(de){
             log.info("custom click is executed ");
         return true;
         }
@@ -33,8 +32,7 @@ public class Custom {
 
     @SyncAction(uniqueId = "MyProject-Sample-104",groupName = "Click",objectTemplate = @ObjectTemplate(name = TechnologyType.WEB,description = "This action belongs to WEB"))
     public boolean elementNotExist(String xpath){
-        driver.findElement(FindBy.xpath(xpath));
-      boolean de = !driver.exist(FindBy.xpath(xpath));
+        boolean de = driver.findElement(FindBy.xpath(xpath)).elementNotExist();
       if(de){
         log.info("custom click is executed ");
          return true;
@@ -44,10 +42,39 @@ public class Custom {
     }
 
     @SyncAction(uniqueId = "MyProject-Sample-105",groupName = "Click",objectTemplate = @ObjectTemplate(name = TechnologyType.WEB,description = "This action belongs to WEB"))
+    public boolean elementIsNotDisplayed(String xpath) {
+        try {
+           boolean de = driver.findElement(FindBy.xpath(xpath)).elementIsNotDisplayed();
+            // Check if the element is not displayed
+            if (de) {
+                log.info("Element is present but not displayed.");
+                return true;
+            } else {
+                log.info("Element is present and displayed.");
+                return false;
+            }
+        } catch (Exception e) {
+            log.info("Element does not exist.");
+            return false;
+        }
+    }
+
+    //elementIsChecked()
+    @SyncAction(uniqueId = "MyProject-Sample-106",groupName = "Click",objectTemplate = @ObjectTemplate(name = TechnologyType.WEB,description = "This action belongs to WEB"))
+    public boolean elementIsChecked(String xpath){
+        boolean de = driver.findElement(FindBy.xpath(xpath)).elementIsChecked();
+      if(de){
+        log.info("custom click is executed ");
+         return true;
+        }
+        log.info("custom click is executed ");
+        return false;
+    }
+
+    //elementIsClickable
+    @SyncAction(uniqueId = "MyProject-Sample-107",groupName = "Click",objectTemplate = @ObjectTemplate(name = TechnologyType.WEB,description = "This action belongs to WEB"))
     public boolean elementIsClickable(String xpath){
-       boolean de= driver.elementIsClickable(FindBy.xpath(xpath));
-        //driver.findElement(FindBy.xpath(xpath));
-       // boolean de = !driver.exist(FindBy.xpath(xpath));
+        boolean de = driver.findElement(FindBy.xpath(xpath)).elementIsClickable();
       if(de){
         log.info("custom click is executed ");
          return true;
@@ -56,11 +83,34 @@ public class Custom {
         return false;
     }
 
-    @SyncAction(uniqueId = "MyProject-Sample-105",groupName = "Click",objectTemplate = @ObjectTemplate(name = TechnologyType.WEB,description = "This action belongs to WEB"))
+    //elementIsEnabled
+    @SyncAction(uniqueId = "MyProject-Sample-108",groupName = "Click",objectTemplate = @ObjectTemplate(name = TechnologyType.WEB,description = "This action belongs to WEB"))
     public boolean elementIsEnabled(String xpath){
-        driver.elementIsEnabled(FindBy.xpath(xpath));
-        //driver.findElement(FindBy.xpath(xpath));
-      boolean de = driver.elementIsEnabled(FindBy.xpath(xpath));
+        boolean de = driver.findElement(FindBy.xpath(xpath)).elementIsEnabled();
+      if(de){
+        log.info("custom click is executed ");
+         return true;
+        }
+        log.info("custom click is executed ");
+        return false;
+    }
+
+    //elementIsDisabled
+    @SyncAction(uniqueId = "MyProject-Sample-109",groupName = "Click",objectTemplate = @ObjectTemplate(name = TechnologyType.WEB,description = "This action belongs to WEB"))
+    public boolean elementIsDisabled(String xpath){
+        boolean de = driver.findElement(FindBy.xpath(xpath)).elementIsDisabled();
+      if(de){
+        log.info("custom click is executed ");
+         return true;
+        }
+        log.info("custom click is executed ");
+        return false;
+    }
+
+    //elementIsNotChecked
+    @SyncAction(uniqueId = "MyProject-Sample-110",groupName = "Click",objectTemplate = @ObjectTemplate(name = TechnologyType.WEB,description = "This action belongs to WEB"))
+    public boolean elementIsNotChecked(String xpath){
+        boolean de = driver.findElement(FindBy.xpath(xpath)).elementIsNotChecked();
       if(de){
         log.info("custom click is executed ");
          return true;
@@ -71,8 +121,4 @@ public class Custom {
 
 
 
-    
-
-
-    
 }
