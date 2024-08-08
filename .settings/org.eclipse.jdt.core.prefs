@@ -1,5 +1,8 @@
 eclipse.preferences.version=1
+<<<<<<< HEAD
 org.eclipse.jdt.core.compiler.codegen.methodParameters=generate
+=======
+>>>>>>> 665155c828eba5d5659ee61c474cbd214b86c2c5
 org.eclipse.jdt.core.compiler.codegen.targetPlatform=15
 org.eclipse.jdt.core.compiler.compliance=15
 org.eclipse.jdt.core.compiler.problem.enablePreviewFeatures=disabled
